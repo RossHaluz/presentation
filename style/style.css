@@ -1,0 +1,198 @@
+:root {
+  --indent: 30px;
+  --items: 3;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: #332724;
+  padding-top: 82px;
+}
+.container {
+  width: 1110px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+.card-set {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-set-iteam {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+.title {
+  margin-bottom: 31px;
+  font-size: 48px;
+  line-height: 59px;
+}
+/* Header  */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 -4px 24px rgb(105 105 105 / 10%);
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.hero__subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  max-width: 542px;
+}
+
+.header__list {
+  display: flex;
+  gap: 75px;
+}
+
+/* Hero  */
+.hero {
+  display: flex;
+  background-image: url("../images/ball-lg.png"), url("../images/ball-md.png"),
+    url("../images/ball-sm.png");
+  background-repeat: no-repeat;
+  background-position: bottom 100px left 639px, left 436px bottom 100px,
+    left 552px bottom 77px;
+}
+.hero__title {
+  font-size: 58px;
+  line-height: 71px;
+  min-width: 658px;
+}
+
+/* Team  */
+
+.team-list__item {
+  text-align: center;
+}
+.team-list__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  max-width: 172px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.team-list__desc {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.team-list__text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Clients  */
+.cliens {
+  background-image: url("../images/ball-blue-lg.png"),
+    url("../images/ball-blue-sm.png");
+  background-repeat: no-repeat;
+  background-position: top 58px right 156px, top 119px right 209px;
+}
+.cliens-wrap {
+  display: flex;
+}
+.cliens-wrapdesc {
+  margin-left: 82px;
+}
+.cliens__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.cliens-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 24px;
+  line-height: 29px;
+}
+.cliens-list__item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cliens__img {
+  margin-right: 20px;
+}
+
+/* Problems  */
+.problems-wrap {
+  display: flex;
+  align-items: center;
+}
+
+/* Technology  */
+.technology {
+  background-image: url("../images/technology.png");
+  background-repeat: no-repeat;
+  background-size: 346px 309px;
+  background-position: bottom 30px right 169px;
+}
+.technology-list__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  margin: 0;
+  margin-bottom: 30px;
+}
+.technology-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.technology-list__wrap {
+  display: flex;
+  align-items: center;
+}
+.technology-wrap {
+  display: flex;
+  gap: 124px;
+}
+
+/* Footer  */
+.footer {
+  background-image: url("../images/ball/ball-blue-sm.png"),
+    url("../images/ball/ball-broun.png"), url("../images/ball/ball-blue.png"),
+    url("../images/ball/ball-rose-sm.png"),
+    url("../images/ball/ball-rose-md.png"),
+    url("../images/ball/ball-rose-lg.png");
+  background-repeat: no-repeat;
+  background-position: bottom left 314px, bottom 240px left 278px,
+    bottom 376px left 411px, bottom 270px right 260px, bottom 312px right 349px,
+    bottom 129px right 350px;
+}
+.footer__title {
+  font-size: 58px;
+  line-height: calc(71 / 58);
+  color: #332724;
+}
+.footer__wrap {
+  text-align: center;
+}
